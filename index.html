@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NBK7PL5S');</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaFlow Enterprise & Store | 2026 GTM, GA4 & Ads Practice Sandbox</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Initialize window.dataLayer before any GTM script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        /* Custom styling for GTM Selector Inspector Mode */
+        .gtm-badge {
+            display: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            line-height: 1.2;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: rgba(15, 23, 42, 0.95);
+            color: #38bdf8;
+            border: 1px solid #0284c7;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 40;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        body.show-gtm-selectors .gtm-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        body.show-gtm-selectors .gtm-highlight {
+            outline: 2px dashed #0ea5e9 !important;
+            outline-offset: 3px;
+            position: relative;
+        }
+        /* Scrollbar styling for DataLayer console */
+        .dl-scroll::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .dl-scroll::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .dl-scroll::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-indigo-600 selection:text-white pb-24">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBK7PL5S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Top Viewport Scroll Depth Visual Progress Bar (25%, 50%, 75%, 100%) -->
+    <div class="fixed top-0 left-0 right-0 h-1.5 bg-slate-900/80 z-[100] flex items-center">
+        <div id="scroll-progress-bar" class="h-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 transition-all duration-150" style="width: 0%;"></div>
+        <!-- Scroll Threshold Markers -->
+        <div class="absolute left-1/4 top-0 h-1.5 w-0.5 bg-white/50" title="25% Scroll Threshold"></div>
+        <div class="absolute left-2/4 top-0 h-1.5 w-0.5 bg-white/50" title="50% Scroll Threshold"></div>
+        <div class="absolute left-3/4 top-0 h-1.5 w-0.5 bg-white/50" title="75% Scroll Threshold"></div>
+    </div>
+
+    <!-- 1. TOP GTM SANDBOX & DEVTOOLS BAR -->
+    <div class="sticky top-1.5 z-50 bg-slate-950 text-slate-100 border-b border-slate-800 shadow-xl">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                
+                <!-- Left: Sandbox Status & Live GTM Injector -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        GTM LAB 2026.10
+                    </span>
+
+                    <div class="flex items-center bg-slate-900 border border-slate-700 rounded-lg p-1">
+                        <input id="gtm-id-input" type="text" placeholder="GTM-XXXXXXX" 
+                            class="bg-transparent text-xs font-mono px-2.5 py-1 text-white placeholder-slate-500 focus:outline-none w-32 sm:w-36 uppercase"
+                            value="">
+                        <button id="inject-gtm-btn" onclick="injectGTMContainer()" 
+                            class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium px-3 py-1 rounded-md transition flex items-center gap-1">
+                            <i class="fa-solid fa-bolt text-[10px]"></i>
+                            <span id="inject-gtm-text">Inject GTM</span>
+                        </button>
+                    </div>
+
+                    <button onclick="openCheatSheetModal()" class="text-xs font-mono text-amber-300 hover:text-amber-200 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1.5 rounded-lg transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="hidden md:inline">Course Scripts & Checklist</span>
+                    </button>
+                </div>
+
+                <!-- Center: Virtual URL & Page Path Switcher -->
+                <div class="flex flex-wrap items-center gap-1.5 text-xs">
+                    <span class="text-slate-400 font-mono hidden xl:inline mr-1">Virtual Path:</span>
+                    <button onclick="simulateNavigation('/')" id="nav-btn-home"
+                        class="px-2.5 py-1 rounded-md font-mono bg-indigo-600 text-white transition">
+                        / (Home)
+                    </button>
+                    <button onclick="simulateNavigation('/clothing.php')" id="nav-btn-store"
+                        class="px-2.5 py-1 rounded-md font-mono bg-slate-800 hover:bg-slate-700 text-slate-300 transition"
+                        title="Matches Tawk.to Trigger Exception lesson (/clothing.php)">
+                        /clothing.php
+                    </button>
+                    <button onclick="simulateNavigation('/thanks.php')" id="nav-btn-thanks"
+                        class="px-2.5 py-1 rounded-md font-mono bg-slate-800 hover:bg-slate-700 text-slate-300 transition"
+                        title="Matches Google Ads & Meta Lead Conversion page lesson (/thanks.php)">
+                        /thanks.php
+                    </button>
+                    <button onclick="simulateAdClickParams()" 
+                        class="px-2.5 py-1 rounded-md font-mono bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 transition flex items-center gap-1"
+                        title="Appends ?gclid, &fbclid, and &utm_campaign to test 2026 Attribution">
+                        <i class="fa-solid fa-bullhorn text-[10px]"></i> +Ad Click UTMs/GCLID
+                    </button>
+                </div>
+
+                <!-- Right: Selector Inspector & DataLayer Drawer Toggle -->
+                <div class="flex items-center gap-2">
+                    <label class="inline-flex items-center gap-1.5 cursor-pointer bg-slate-900 border border-slate-700 px-2.5 py-1 rounded-lg text-xs select-none">
+                        <input type="checkbox" id="selector-toggle" onchange="toggleGTMSelectors(this.checked)" class="sr-only peer">
+                        <div class="w-7 h-4 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all relative peer-checked:bg-sky-500"></div>
+                        <span class="font-mono text-sky-300">Show GTM Selectors</span>
+                    </label>
+
+                    <button onclick="toggleDataLayerDrawer()" 
+                        class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-mono px-3 py-1.5 rounded-lg flex items-center gap-2 transition">
+                        <i class="fa-solid fa-layer-group text-cyan-400"></i>
+                        <span>dataLayer</span>
+                        <span id="dl-counter-badge" class="bg-cyan-500 text-slate-950 font-bold px-1.5 py-0.2 rounded text-[10px]">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Live Virtual URL & Scroll Readout Bar -->
+            <div class="mt-2 pt-1.5 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-400 gap-2">
+                <div class="flex items-center gap-2 truncate">
+                    <span class="text-slate-500">Current Page URL:</span>
+                    <code id="virtual-url-display" class="text-cyan-300 bg-slate-900 px-2 py-0.5 rounded border border-slate-800 truncate">https://nexaflow.enterprise/</code>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span>Scroll Depth: <strong id="scroll-pct-readout" class="text-indigo-400">0%</strong></span>
+                    <label class="inline-flex items-center gap-1.5 cursor-pointer text-amber-300" title="Simulates the GTM Exception Trigger lesson: Block Tawk.to Live Chat on /clothing.php">
+                        <input type="checkbox" id="tawk-exception-toggle" checked onchange="evaluateTawkException()" class="rounded bg-slate-800 border-slate-600 text-indigo-500">
+                        <span>Exception Rule: Hide Chat on <code>/clothing.php</code></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. NAVIGATION & LINK TRACKING SECTION -->
+    <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-[88px] sm:top-[76px] z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <a href="#hero" onclick="simulateNavigation('/'); return false;" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-indigo-500/20">
+                        N
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-lg tracking-tight text-slate-900 block leading-none">NexaFlow</span>
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-600 font-semibold">Enterprise & Store</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Header Navigation Links (Internal Anchor Links for GTM Just Links / Click URL / Click Text) -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 gtm-highlight">
+                <span class="gtm-badge"><i class="fa-solid fa-link"></i> Trigger: Just Links | Vars: Click Text, Click URL</span>
+                <a href="#features" onclick="ensureHomeAndScroll('features')" class="hover:text-indigo-600 transition py-1">Features</a>
+                <a href="#amenities" onclick="ensureHomeAndScroll('amenities')" class="hover:text-indigo-600 transition py-1">Amenities & Spaces</a>
+                <a href="#video-tour" onclick="ensureHomeAndScroll('video-tour')" class="hover:text-indigo-600 transition py-1">Video Tour</a>
+                <a href="#products" onclick="ensureHomeAndScroll('products')" class="hover:text-indigo-600 transition py-1">Store (/clothing.php)</a>
+                <a href="#contact" id="nav-contact-link" onclick="ensureHomeAndScroll('contact')" 
+                    class="text-indigo-600 font-semibold hover:text-indigo-700 transition py-1 px-2.5 bg-indigo-50 rounded-lg border border-indigo-100">
+                    Contact Us (#contact)
+                </a>
+            </nav>
+
+            <!-- Right Actions: Cart Drawer Button & Quick Store Switch -->
+            <div class="flex items-center gap-3">
+                <button onclick="openCartModal()" class="relative inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold transition">
+                    <i class="fa-solid fa-bag-shopping text-indigo-600"></i>
+                    <span class="hidden sm:inline">Cart</span>
+                    <span id="header-cart-count" class="bg-indigo-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">1</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN LANDING PAGE VIEW (/) -->
+    <main id="view-home" class="space-y-20">
+
+        <!-- 4. HERO & FILE DOWNLOADS SECTION (Button Clicks & RegEx Practice) -->
+        <section id="hero" class="relative overflow-hidden pt-10 pb-16 md:py-20 bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Hero Left Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+                            Next-Gen B2B Cloud Infrastructure & Smart Commercial Spaces
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            Scale Your Enterprise with <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-300 to-emerald-300">Precision Signal Intelligence.</span>
+                        </h1>
+
+                        <p class="text-slate-300 text-lg max-w-2xl leading-relaxed">
+                            Experience a live, full-funnel enterprise environment engineered to test every client-side GTM trigger, GA4 event parameter, RegEx download rule, and 2026 Enhanced Conversion workflow.
+                        </p>
+
+                        <!-- Primary CTA Buttons: Exact Click Text from Course ("Download Brochure" & "Walkthrough") -->
+                        <div class="pt-2 flex flex-wrap items-center gap-4 gtm-highlight">
+                            <span class="gtm-badge"><i class="fa-solid fa-hand-pointer"></i> Trigger: All Elements | Click Text = "Download Brochure" vs "Walkthrough"</span>
+                            
+                            <button id="btn-download-brochure" onclick="handleHeroButtonClick('Download Brochure')"
+                                class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/30 transition transform active:scale-95 flex items-center gap-2">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>Download Brochure</span>
+                            </button>
+
+                            <button id="btn-walkthrough" onclick="handleHeroButtonClick('Walkthrough')"
+                                class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-semibold transition transform active:scale-95 flex items-center gap-2">
+                                <i class="fa-solid fa-circle-play text-cyan-400"></i>
+                                <span>Walkthrough</span>
+                            </button>
+                        </div>
+
+                        <!-- Multi-Format Resource Hub (RegEx Download Practice: .pdf|.ppt|.docx|.xlsx) -->
+                        <div class="pt-6 border-t border-slate-800/80 space-y-3 gtm-highlight">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono uppercase tracking-wider text-slate-400">
+                                    <i class="fa-solid fa-folder-open text-amber-400 mr-1"></i> Enterprise Resource Hub (RegEx File Download Links)
+                                </span>
+                                <span class="gtm-badge"><i class="fa-solid fa-code-Post"></i> Trigger: Just Links | Click URL Matches RegEx: \.(pdf|ppt|docx|xlsx)$</span>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                                <a href="/files/nexaflow-brochure-2026.pdf" onclick="handleSimulatedFileDownload(event, '/files/nexaflow-brochure-2026.pdf', 'PDF Brochure')"
+                                    class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-xs font-medium text-slate-200 transition group">
+                                    <i class="fa-solid fa-file-pdf text-rose-400 text-base group-hover:scale-110 transition"></i>
+                                    <div class="truncate">
+                                        <div class="truncate font-semibold">Brochure.pdf</div>
+                                        <div class="text-[10px] text-slate-400 font-mono">.pdf</div>
+                                    </div>
+                                </a>
+
+                                <a href="/files/enterprise-pitch-deck.ppt" onclick="handleSimulatedFileDownload(event, '/files/enterprise-pitch-deck.ppt', 'Pitch Deck PPT')"
+                                    class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-xs font-medium text-slate-200 transition group">
+                                    <i class="fa-solid fa-file-powerpoint text-amber-400 text-base group-hover:scale-110 transition"></i>
+                                    <div class="truncate">
+                                        <div class="truncate font-semibold">PitchDeck.ppt</div>
+                                        <div class="text-[10px] text-slate-400 font-mono">.ppt</div>
+                                    </div>
+                                </a>
+
+                                <a href="/files/technical-architecture.docx" onclick="handleSimulatedFileDownload(event, '/files/technical-architecture.docx', 'Architecture Doc')"
+                                    class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-xs font-medium text-slate-200 transition group">
+                                    <i class="fa-solid fa-file-word text-sky-400 text-base group-hover:scale-110 transition"></i>
+                                    <div class="truncate">
+                                        <div class="truncate font-semibold">Specs.docx</div>
+                                        <div class="text-[10px] text-slate-400 font-mono">.docx</div>
+                                    </div>
+                                </a>
+
+                                <a href="/files/roas-calculator-2026.xlsx" onclick="handleSimulatedFileDownload(event, '/files/roas-calculator-2026.xlsx', 'ROAS Model XLSX')"
+                                    class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-xs font-medium text-slate-200 transition group">
+                                    <i class="fa-solid fa-file-excel text-emerald-400 text-base group-hover:scale-110 transition"></i>
+                                    <div class="truncate">
+                                        <div class="truncate font-semibold">ROAS_2026.xlsx</div>
+                                        <div class="text-[10px] text-slate-400 font-mono">.xlsx</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Right: Live Interactive Metric Card -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-5">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                <div>
+                                    <span class="text-xs font-mono text-indigo-400 uppercase">Real-Time Telemetry</span>
+                                    <h2 class="text-lg font-bold text-white">Active Session Signal Monitor</h2>
+                                </div>
+                                <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                                    GA4 & CAPI Ready
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3 text-xs font-mono">
+                                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                    <span class="text-slate-400 block">GCLID Status</span>
+                                    <span id="hero-gclid-status" class="text-amber-300 font-semibold truncate block mt-1">Not in URL (Click +Ad Click)</span>
+                                </div>
+                                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                    <span class="text-slate-400 block">Consent Mode v2</span>
+                                    <span id="hero-consent-status" class="text-emerald-400 font-semibold block mt-1">Pending Banner Interaction</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-950/90 rounded-xl p-4 border border-slate-800 space-y-2">
+                                <div class="text-xs font-mono text-slate-400 flex items-center justify-between">
+                                    <span>Latest dataLayer Push:</span>
+                                    <button onclick="toggleDataLayerDrawer()" class="text-indigo-400 hover:underline">Expand Log</button>
+                                </div>
+                                <pre id="hero-latest-dl" class="text-xs font-mono text-cyan-300 overflow-x-auto whitespace-pre-wrap max-h-36 dl-scroll">{ "event": "gtm.js", "status": "sandbox_initialized" }</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ELEMENT VISIBILITY, IMAGE HOVER & COPY TEXT LAB -->
+        <section id="amenities" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-widest text-indigo-600 font-semibold">DOM Scraping, Visibility & Custom Listeners</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Smart Commercial Spaces & Cloud Architecture</h2>
+                <p class="text-slate-600 mt-2 text-sm">
+                    Scroll this section into 100% view to test the <code>.col-lg-6</code> Element Visibility trigger, hover your cursor over the showcase image for 1.5 seconds to fire <code>gtm.hover</code>, or copy the enterprise quote below.
+                </p>
+            </div>
+
+            <div id="features" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+                
+                <!-- EXACT CLASS FROM COURSE: .col-lg-6 for Element Visibility Trigger (100% Visible) -->
+                <div id="visibility-showcase-box" class="col-lg-6 lg:col-span-6 relative group gtm-highlight rounded-2xl overflow-hidden border border-slate-200 bg-slate-900">
+                    <span class="gtm-badge absolute top-3 left-3"><i class="fa-solid fa-eye"></i> Container: .col-lg-6 (Visibility) | Image: img.img-fluid (1.5s Hover)</span>
+                    
+                    <!-- EXACT CLASS FROM COURSE: img-fluid for 1500ms Image Hover Intent Script -->
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" 
+                        onerror="this.src='https://placehold.co/800x500/1e1b4b/ffffff?text=NexaFlow+Smart+Tower+(img-fluid)'"
+                        alt="NexaFlow Enterprise Tower & Data Center" 
+                        class="img-fluid w-full h-80 sm:h-96 object-cover transition duration-500 group-hover:scale-105"
+                        id="hover-target-image">
+
+                    <!-- Visual 1.5s Hover Timer Overlay & Visibility Status Badge -->
+                    <div class="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md text-white p-3 rounded-xl border border-slate-800 flex items-center justify-between text-xs font-mono">
+                        <div class="flex items-center gap-2">
+                            <span id="visibility-indicator-dot" class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            <span id="visibility-status-text">Visibility (.col-lg-6): Waiting for 100% view</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-indigo-500/20 border border-indigo-400/30 px-2.5 py-1 rounded-lg text-indigo-300">
+                            <i class="fa-solid fa-clock"></i>
+                            <span id="hover-timer-display">Hover: 0.0s / 1.5s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Copyable Text & Promo Block (Clipboard Text Lesson) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold border border-emerald-200">
+                        <i class="fa-solid fa-building-shield"></i> Flagship Enterprise Campus & Cloud Suite
+                    </div>
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">
+                        Designed for High-Intent Engagement Tracking
+                    </h3>
+
+                    <!-- Copyable Quote Block matching the video's copy text tracking example -->
+                    <div class="p-5 rounded-2xl bg-slate-50 border-l-4 border-indigo-600 space-y-2 gtm-highlight">
+                        <span class="gtm-badge"><i class="fa-solid fa-copy"></i> Custom Event: text_copy | Data Layer Var: clipboard_text</span>
+                        <p class="text-xs font-mono uppercase text-slate-400">Select & Copy Any Text Below (Ctrl+C / Cmd+C):</p>
+                        <blockquote id="copyable-quote" class="text-base sm:text-lg font-medium text-slate-800 italic select-all">
+                            "It's more than technology—it's a new standard of living. 3 & 4 BHK Smart Spaces & Enterprise Cloud Infrastructure in Pune."
+                        </blockquote>
+                    </div>
+
+                    <!-- Promo Code Copy Box -->
+                    <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-semibold text-indigo-900 uppercase tracking-wider block">2026 Enterprise Voucher Code</span>
+                            <code id="promo-code-text" class="text-lg font-mono font-bold text-indigo-600 select-all">NEXA2026ROAS</code>
+                        </div>
+                        <button onclick="copyPromoCodeToClipboard()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-regular fa-copy"></i> Copy Code & Fire Event
+                        </button>
+                    </div>
+
+                    <div id="location-map" class="grid grid-cols-3 gap-3 pt-2 text-center">
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-xl font-extrabold text-slate-900">99.99%</div>
+                            <div class="text-xs text-slate-500">sGTM Uptime</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-xl font-extrabold text-slate-900">1.5s</div>
+                            <div class="text-xs text-slate-500">Hover Threshold</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-xl font-extrabold text-slate-900">SHA-256</div>
+                            <div class="text-xs text-slate-500">Enhanced Conv.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. EMBEDDED YOUTUBE VIDEO SECTION -->
+        <section id="video-tour" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-4">
+                        <span class="px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs font-mono">
+                            <i class="fa-brands fa-youtube mr-1"></i> Built-In YouTube Video Trigger
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold">Embedded Walkthrough Video (`?enablejsapi=1`)</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            This embedded YouTube player includes <code>?enablejsapi=1</code> in the URL so GTM's native <strong>YouTube Video Trigger</strong> can capture Start, Complete, Pause, Seeking, and Progress thresholds (25%, 50%, 75%, 90%).
+                        </p>
+
+                        <!-- Simulated Video Trigger Buttons in case iframe restrictions apply in preview -->
+                        <div class="pt-3 space-y-2 gtm-highlight">
+                            <span class="gtm-badge"><i class="fa-solid fa-film"></i> Variables: Video Status, Video Percent, Video Title, Video URL</span>
+                            <div class="text-xs font-mono text-slate-400">Instant Video Event Simulators (pushes to dataLayer):</div>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="simulateYouTubeEvent('start', 0)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-emerald-300 transition">
+                                    ▶ Play (0%)
+                                </button>
+                                <button onclick="simulateYouTubeEvent('progress', 25)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-cyan-300 transition">
+                                    25% Progress
+                                </button>
+                                <button onclick="simulateYouTubeEvent('progress', 50)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-cyan-300 transition">
+                                    50% Progress
+                                </button>
+                                <button onclick="simulateYouTubeEvent('progress', 75)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-cyan-300 transition">
+                                    75% Progress
+                                </button>
+                                <button onclick="simulateYouTubeEvent('complete', 100)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-amber-300 transition">
+                                    ✔ Complete (100%)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 gtm-highlight">
+                        <span class="gtm-badge mb-2"><i class="fa-brands fa-youtube"></i> YouTube IFrame API Enabled (?enablejsapi=1)</span>
+                        <div class="aspect-video rounded-2xl overflow-hidden border border-slate-700 bg-black shadow-2xl">
+                            <iframe id="gtm-youtube-player"
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/b-IpGibR59M?enablejsapi=1&rel=0"
+                                title="Google Tag Manager Course Video Walkthrough"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. THREE COMPLETE LEAD FORMS (Beginner to 2026 Intermediate) -->
+        <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-mono uppercase tracking-widest text-indigo-600 font-semibold">Lead Generation & Attribution Lab (#contact)</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">3 Real-World Conversion Tracking Forms</h2>
+                <p class="text-slate-600 mt-2 text-sm">
+                    Practice all three form tracking paradigms: (A) Classic URL Redirect to <code>/thanks.php</code>, (B) Non-Redirecting AJAX Custom Event Listeners (<code>wpcf7mailsent</code> & <code>wpform_submit</code>), and (C) 2026 Intermediate Enhanced Conversions + GCLID/UTM & Calendly iFrame <code>postMessage</code>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+
+                <!-- FORM A: Standard Redirect Form -> /thanks.php -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between gtm-highlight">
+                    <span class="gtm-badge mb-3"><i class="fa-solid fa-route"></i> Form A: Redirects to /thanks.php (Page View Trigger)</span>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 font-mono text-xs font-semibold">Level 1: Beginner</span>
+                            <span class="text-xs font-mono text-slate-400">Page Path: /thanks.php</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900">A. Standard Redirect Form</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-5">
+                            Redirects to <code>/thanks.php</code> on submit. Use this to test Google Ads Conversion Tracking & Meta Pixel <code>Lead</code> on a Thank You Page trigger.
+                        </p>
+
+                        <form id="form-redirect-thanks" onsubmit="handleRedirectFormSubmit(event)" class="space-y-3.5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                                <input type="text" id="formA-name" required value="Aarav Sharma"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Work Email *</label>
+                                <input type="email" id="formA-email" required value="aarav@nexaflow.in"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="formA-phone" required value="+919876543210"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Enterprise Requirement</label>
+                                <select id="formA-req" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                    <option value="3 BHK Smart Office Suite">3 BHK Smart Office Suite</option>
+                                    <option value="4 BHK Enterprise Floor">4 BHK Enterprise Floor</option>
+                                    <option value="Cloud Analytics Cluster">Cloud Analytics Cluster</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-md transition">
+                                Submit & Redirect to /thanks.php →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FORM B: AJAX Form (Contact Form 7 & WPForms Simulator - No Redirect) -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between gtm-highlight">
+                    <span class="gtm-badge mb-3"><i class="fa-solid fa-bolt"></i> Form B: AJAX Custom Events (wpcf7mailsent / wpform_submit)</span>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 font-mono text-xs font-semibold">Level 2: Course AJAX</span>
+                            <span class="text-xs font-mono text-slate-400">No URL Redirect</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900">B. AJAX WordPress Form Simulator</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">
+                            Submits without changing the URL. Dispatches the real DOM CustomEvent <code>wpcf7mailsent</code> or <code>wpformsAjaxSubmitSuccess</code> and pushes to <code>dataLayer</code>.
+                        </p>
+
+                        <form id="form-ajax-wp" onsubmit="handleAjaxFormSubmit(event)" class="space-y-3.5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Select WordPress Plugin Mode</label>
+                                <select id="ajax-plugin-mode" class="w-full px-3 py-2 rounded-xl border border-amber-300 bg-amber-50/50 text-xs font-mono font-semibold text-slate-800 focus:outline-none">
+                                    <option value="wpcf7mailsent">Contact Form 7 (Event: wpcf7mailsent)</option>
+                                    <option value="wpform_submit">WPForms AJAX (Event: wpform_submit)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                                <input type="text" id="formB-name" required value="Priya Deshmukh"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Email *</label>
+                                <input type="email" id="formB-email" required value="priya.d@company.co.in"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Message</label>
+                                <input type="text" id="formB-msg" value="Requesting callback for Q4 campaign"
+                                    class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                            </div>
+                            <button type="submit" class="w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm shadow-md transition">
+                                Submit AJAX Form (No Redirect)
+                            </button>
+                        </form>
+
+                        <!-- Inline AJAX Confirmation Message matching the video -->
+                        <div id="ajax-form-response" class="hidden mt-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium">
+                            <div class="font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                                <span>Thank you for submitting your information.</span>
+                            </div>
+                            <div id="ajax-event-dispatched-info" class="font-mono text-[11px] text-emerald-700 mt-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORM C: 2026 Intermediate Form (Enhanced Conversions + GCLID/UTMs + iFrame postMessage) -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-xl border border-slate-800 flex flex-col justify-between gtm-highlight">
+                    <span class="gtm-badge mb-3"><i class="fa-solid fa-shield-halved"></i> Form C: Enhanced Conversions + CAPI event_id + GCLID</span>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono text-xs font-semibold">Level 3: 2026 Intermediate</span>
+                            <span class="text-xs font-mono text-cyan-400">SHA-256 + CAPI Ready</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">C. Enhanced Conversions & CRM Sync</h3>
+                        <p class="text-xs text-slate-400 mt-1 mb-4">
+                            Pushes structured <code>user_data</code> (Google Ads Enhanced Conversions), a deduplicated <code>event_id</code> (Meta CAPI), and auto-captured <code>gclid</code>/<code>utm</code> fields.
+                        </p>
+
+                        <form id="form-intermediate-2026" onsubmit="handleIntermediateFormSubmit(event)" class="space-y-3">
+                            <div class="grid grid-cols-2 gap-2.5">
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">First Name</label>
+                                    <input type="text" id="formC-fname" required value="Rohan"
+                                        class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">Last Name</label>
+                                    <input type="text" id="formC-lname" required value="Kulkarni"
+                                        class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2.5">
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">Email (user_data.email)</label>
+                                    <input type="email" id="formC-email" required value="rohan.k@enterprise.in"
+                                        class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">Phone (E.164 Format)</label>
+                                    <input type="tel" id="formC-phone" required value="+919822012345"
+                                        class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2">
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">City</label>
+                                    <input type="text" id="formC-city" value="Pune"
+                                        class="w-full px-2.5 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">Postal</label>
+                                    <input type="text" id="formC-zip" value="411001"
+                                        class="w-full px-2.5 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-mono text-slate-400 mb-1">Country</label>
+                                    <input type="text" id="formC-country" value="IN"
+                                        class="w-full px-2.5 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white">
+                                </div>
+                            </div>
+
+                            <!-- Auto-Captured First-Party Cookie / URL Hidden Fields -->
+                            <div class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1 text-[11px] font-mono">
+                                <div class="text-slate-400 flex justify-between">
+                                    <span>Auto-Captured Hidden Fields:</span>
+                                    <button type="button" onclick="simulateAdClickParams()" class="text-emerald-400 hover:underline">Populate</button>
+                                </div>
+                                <div class="grid grid-cols-2 gap-1 text-slate-300">
+                                    <div class="truncate">gclid: <span id="hidden-gclid" class="text-cyan-400">none</span></div>
+                                    <div class="truncate">fbclid: <span id="hidden-fbclid" class="text-cyan-400">none</span></div>
+                                    <div class="truncate">utm_source: <span id="hidden-utm-source" class="text-amber-300">direct</span></div>
+                                    <div class="truncate">utm_campaign: <span id="hidden-utm-campaign" class="text-amber-300">none</span></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shadow-lg transition">
+                                Push Enhanced Conversion + CAPI Lead
+                            </button>
+                        </form>
+
+                        <!-- Calendly iFrame postMessage Simulator -->
+                        <div class="mt-4 pt-3 border-t border-slate-800">
+                            <button type="button" onclick="simulateCalendlyPostMessage()"
+                                class="w-full py-2 px-3 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 border border-indigo-500/30 text-indigo-300 font-mono text-xs transition flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <span>Simulate Calendly iFrame postMessage</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. E-COMMERCE STORE & POPUP LAB (Also accessible as /clothing.php standalone view) -->
+        <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-indigo-600 font-semibold">GA4 & Ads Dynamic E-Commerce Data Layer + Popup Trigger</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-1">NexaFlow Enterprise Store (<code>/clothing.php</code>)</h2>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Clicking <strong>"Add to Cart"</strong> opens a modal with exact class <code>.popup-container</code> (for your Element Visibility Popup trigger) and pushes standard GA4 <code>ecommerce.items</code> arrays.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="simulateNavigation('/clothing.php')" class="px-3.5 py-2 rounded-xl bg-slate-900 text-white text-xs font-mono hover:bg-slate-800 transition">
+                        Switch URL to /clothing.php
+                    </button>
+                    <button onclick="openCartModal()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-500 transition">
+                        Open Checkout Drawer (<span id="store-cart-count">1</span>)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4 Realistic Products Grid rendered dynamically by JS -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </section>
+
+    </main>
+
+    <!-- DEDICATED THANK YOU PAGE VIEW (/thanks.php) -->
+    <section id="view-thanks" class="hidden max-w-4xl mx-auto px-4 sm:px-6 py-16">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-200 text-center space-y-6 gtm-highlight">
+            <span class="gtm-badge"><i class="fa-solid fa-flag-checkered"></i> Trigger: Page View | Page URL contains thanks.php</span>
+            
+            <div class="w-20 h-20 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto shadow-inner">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <div class="space-y-2">
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-mono text-xs font-semibold border border-emerald-200">
+                    Current Virtual Path: /thanks.php
+                </span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Thank You! Your Request Is Confirmed.</h1>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm">
+                    This view simulates <code>/thanks.php</code> from the GTM course. Your <strong>Google Ads Conversion Tracking Tag</strong>, <strong>Conversion Linker</strong>, and <strong>Meta Pixel <code>Lead</code> / <code>Purchase</code> Tag</strong> configured on <code>Page URL contains thanks.php</code> will fire here.
+                </p>
+            </div>
+
+            <!-- Dynamic Conversion Summary Box -->
+            <div id="thanks-conversion-summary" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 text-left font-mono text-xs space-y-2 max-w-xl mx-auto">
+                <div class="text-slate-400 uppercase font-semibold">Conversion Payload Dispatched to window.dataLayer:</div>
+                <div id="thanks-summary-details" class="text-slate-800 space-y-1">
+                    <div>Lead Name: <strong class="text-indigo-600">Aarav Sharma</strong></div>
+                    <div>Lead Email: <strong class="text-indigo-600">aarav@nexaflow.in</strong></div>
+                    <div>Conversion Page: <strong>/thanks.php</strong></div>
+                </div>
+            </div>
+
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <button onclick="simulateNavigation('/')" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Home (/)
+                </button>
+                <button onclick="toggleDataLayerDrawer()" class="px-6 py-3 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold text-sm transition">
+                    Inspect Conversion in dataLayer Log
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3B. OUTBOUND LINKS SECTION (Footer & Partner Bar) -->
+    <footer class="mt-24 bg-slate-900 text-slate-400 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center justify-between">
+                <div class="md:col-span-6 space-y-2">
+                    <div class="flex items-center gap-2 text-white font-bold text-lg">
+                        <span class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-sm">N</span>
+                        <span>NexaFlow Enterprise & Store</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-md">
+                        Built for practicing client-side and 2026 intermediate performance marketing tracking in Google Tag Manager, GA4, Google Ads, and Meta Events Manager.
+                    </p>
+                </div>
+
+                <!-- External Outbound Links for practicing Auto-Event Variable (Element URL -> Is Outbound = true) -->
+                <div class="md:col-span-6 space-y-2 gtm-highlight p-4 rounded-2xl bg-slate-950/60 border border-slate-800">
+                    <span class="gtm-badge"><i class="fa-solid fa-up-right-from-square"></i> Auto-Event Variable: Element URL (Is Outbound = true)</span>
+                    <div class="text-xs font-mono text-slate-300">Outbound Partner & Social Links (Test Outbound Click Trigger):</div>
+                    <div class="flex flex-wrap gap-3 pt-1">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" onclick="logOutboundClick('https://www.facebook.com', 'Facebook Official')"
+                            class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-blue-600 hover:text-white text-xs font-medium transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-facebook"></i> Facebook.com
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" onclick="logOutboundClick('https://www.linkedin.com', 'LinkedIn Enterprise')"
+                            class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-sky-600 hover:text-white text-xs font-medium transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn.com
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" onclick="logOutboundClick('https://twitter.com', 'Twitter X')"
+                            class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 hover:text-white text-xs font-medium transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-x-twitter"></i> Twitter.com
+                        </a>
+                        <a href="https://checkout.stripe.com" target="_blank" rel="noopener noreferrer" onclick="logOutboundClick('https://checkout.stripe.com', 'Stripe Gateway')"
+                            class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-600 hover:text-white text-xs font-medium transition flex items-center gap-1.5"
+                            title="Practice Cross-Domain Linker Gateway">
+                            <i class="fa-brands fa-stripe-s"></i> Stripe Cross-Domain Gateway
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL WITH EXACT CLASS `.popup-container` FROM COURSE -->
+    <div id="add-to-cart-popup-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <!-- Exact CSS Class `.popup-container` taught at [03:03:05] in the video -->
+        <div class="popup-container bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-5 relative animate-fadeIn gtm-highlight">
+            <span class="gtm-badge"><i class="fa-solid fa-window-restore"></i> Trigger: Element Visibility | CSS Selector: .popup-container</span>
+            
+            <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg font-bold">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-mono uppercase text-emerald-600 font-bold">DOM Element: .popup-container</span>
+                        <h3 class="text-lg font-extrabold text-slate-900">Added to Your Enterprise Cart!</h3>
+                    </div>
+                </div>
+                <button onclick="closeAddToCartPopup()" class="text-slate-400 hover:text-slate-600 p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div id="popup-product-summary" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-slate-700"></div>
+
+            <p class="text-xs text-slate-500 leading-relaxed">
+                <strong>GTM Tip:</strong> Because this modal has the CSS class <code>.popup-container</code> and "Observe DOM changes" enabled in your GTM Element Visibility trigger, GTM detects this popup the moment it appears on screen!
+            </p>
+
+            <div class="flex items-center gap-3 pt-2">
+                <button onclick="closeAddToCartPopup()" class="w-1/2 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-semibold text-xs hover:bg-slate-100 transition">
+                    Continue Shopping
+                </button>
+                <button onclick="closeAddToCartPopup(); openCartModal();" class="w-1/2 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-md transition">
+                    Proceed to Checkout →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART & CHECKOUT MODAL (begin_checkout & purchase DataLayer Pushes) -->
+    <div id="cart-modal-backdrop" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden items-center justify-end">
+        <div class="bg-white h-full w-full max-w-md shadow-2xl border-l border-slate-200 flex flex-col justify-between p-6 overflow-y-auto">
+            <div class="space-y-5">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 uppercase font-semibold">GA4 & tROAS E-Commerce Funnel</span>
+                        <h3 class="text-xl font-extrabold text-slate-900">Your Shopping Bag</h3>
+                    </div>
+                    <button onclick="closeCartModal()" class="text-slate-400 hover:text-slate-700 p-1.5">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div id="cart-items-container" class="space-y-3"></div>
+
+                <!-- Coupon & Order Summary -->
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 text-xs">
+                    <div class="flex justify-between text-slate-600">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal" class="font-mono font-semibold">₹4,999</span>
+                    </div>
+                    <div class="flex justify-between text-slate-600">
+                        <span>GST Tax (18%)</span>
+                        <span id="cart-tax" class="font-mono">₹900</span>
+                    </div>
+                    <div class="flex justify-between text-slate-600">
+                        <span>Shipping</span>
+                        <span class="font-mono text-emerald-600">₹0 (Free Enterprise Delivery)</span>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between text-sm font-extrabold text-slate-900">
+                        <span>Total Value (INR)</span>
+                        <span id="cart-total" class="font-mono text-indigo-600">₹5,899</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-6 border-t border-slate-200">
+                <button onclick="triggerBeginCheckout()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>1. Fire GA4 `begin_checkout` Event</span>
+                </button>
+                <button onclick="triggerPurchaseEvent()" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>2. Complete Purchase (`purchase` + CAPI `event_id`)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. FLOATING WIDGETS (WhatsApp Device Toggle & Tawk.to Live Chat Exception Test) -->
+    
+    <!-- Bottom-Left Floating WhatsApp Widget with Desktop (web.whatsapp) vs Mobile (api.whatsapp) Toggle -->
+    <div class="fixed bottom-4 left-4 z-40 flex flex-col items-start gap-2 gtm-highlight">
+        <span class="gtm-badge"><i class="fa-brands fa-whatsapp"></i> Click URL: web.whatsapp.com (Desktop) vs api.whatsapp.com (Mobile)</span>
+        
+        <!-- Device URL Switcher Pill -->
+        <div class="bg-slate-900/95 text-white border border-slate-700 rounded-xl p-1.5 shadow-lg flex items-center gap-1 text-[10px] font-mono">
+            <button id="wa-mode-desktop" onclick="setWhatsAppMode('desktop')" class="px-2 py-1 rounded-lg bg-emerald-600 text-white font-semibold transition">
+                Desktop (web.)
+            </button>
+            <button id="wa-mode-mobile" onclick="setWhatsAppMode('mobile')" class="px-2 py-1 rounded-lg text-slate-300 hover:bg-slate-800 transition">
+                Mobile (api.)
+            </button>
+            <button onclick="openConsentBanner()" class="px-2 py-1 rounded-lg bg-slate-800 text-amber-300 hover:bg-slate-700 ml-1" title="Open Consent Mode v2 Settings">
+                <i class="fa-solid fa-cookie-bite"></i> Consent v2
+            </button>
+        </div>
+
+        <!-- Actual <a> Link Element for GTM Just Links Trigger -->
+        <a id="floating-whatsapp-link" 
+           href="https://web.whatsapp.com/send?phone=919876543210&text=Hi%20NexaFlow%20Team" 
+           target="_blank" rel="noopener noreferrer"
+           onclick="handleWhatsAppClick(event)"
+           class="flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-4 py-3 rounded-2xl shadow-xl shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <div class="text-left leading-tight">
+                <div class="text-xs font-bold">Chat on WhatsApp</div>
+                <div id="wa-url-preview" class="text-[10px] font-mono text-emerald-100">web.whatsapp.com</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Bottom-Right Floating Tawk.to Live Chat Widget Simulator (Hidden on /clothing.php when Exception Rule is active) -->
+    <div id="tawk-chat-widget" class="fixed bottom-4 right-4 z-40 gtm-highlight">
+        <span class="gtm-badge mb-1"><i class="fa-solid fa-ban"></i> Custom HTML: Tawk.to | Exception: Page URL contains /clothing.php</span>
+        <button onclick="handleTawkChatClick()" class="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-3 rounded-2xl shadow-xl shadow-indigo-600/30 border border-indigo-400/30 transition">
+            <div class="relative">
+                <i class="fa-solid fa-comments text-xl"></i>
+                <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-indigo-600"></span>
+            </div>
+            <div class="text-left leading-tight">
+                <div class="text-xs font-extrabold">We Are Here! (Tawk.to)</div>
+                <div class="text-[10px] text-indigo-200 font-mono">Live Support Online</div>
+            </div>
+        </button>
+    </div>
+
+    <!-- 2. GOOGLE CONSENT MODE V2 BANNER (2026 Intermediate Requirement) -->
+    <div id="consent-v2-banner" class="fixed bottom-20 left-4 z-50 max-w-sm w-full bg-slate-950 text-white rounded-2xl p-5 shadow-2xl border border-slate-800 space-y-4 hidden">
+        <div class="flex items-start justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-cat text-amber-400 text-lg"></i>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-amber-300 font-mono">Google Consent Mode v2</h4>
+                    <p class="text-[11px] text-slate-400">October 2026 Signal Compliance</p>
+                </div>
+            </div>
+            <button onclick="closeConsentBanner()" class="text-slate-400 hover:text-white text-xs">✕</button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+            <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900 border border-slate-800">
+                <span>ad_storage</span>
+                <input type="checkbox" id="consent-ad-storage" checked class="accent-indigo-500">
+            </label>
+            <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900 border border-slate-800">
+                <span>analytics_storage</span>
+                <input type="checkbox" id="consent-analytics-storage" checked class="accent-indigo-500">
+            </label>
+            <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900 border border-slate-800">
+                <span>ad_user_data</span>
+                <input type="checkbox" id="consent-ad-user-data" checked class="accent-indigo-500">
+            </label>
+            <label class="flex items-center justify-between p-2 rounded-lg bg-slate-900 border border-slate-800">
+                <span>ad_personalization</span>
+                <input type="checkbox" id="consent-ad-personalization" checked class="accent-indigo-500">
+            </label>
+        </div>
+
+        <div class="flex items-center gap-2 pt-1">
+            <button onclick="applyConsentMode('granted')" class="flex-1 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition">
+                Accept All
+            </button>
+            <button onclick="applyConsentMode('custom')" class="flex-1 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition">
+                Save Toggles
+            </button>
+            <button onclick="applyConsentMode('denied')" class="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition">
+                Reject
+            </button>
+        </div>
+    </div>
+
+    <!-- LIVE WINDOW.DATALAYER CONSOLE DRAWER -->
+    <div id="datalayer-drawer" class="fixed bottom-0 right-0 left-0 md:left-auto md:w-[540px] max-h-[75vh] bg-slate-950 text-slate-100 border-t md:border-l border-slate-800 shadow-2xl z-50 hidden flex-col">
+        <div class="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-cyan-400"></i>
+                <span class="font-mono text-xs font-bold">Live window.dataLayer Stream</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="clearDataLayerLog()" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] font-mono text-slate-300">
+                    Clear Log
+                </button>
+                <button onclick="toggleDataLayerDrawer()" class="px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 text-xs font-mono">
+                    Close ✕
+                </button>
+            </div>
+        </div>
+        <div id="datalayer-log-list" class="p-4 overflow-y-auto space-y-3 font-mono text-xs dl-scroll flex-1 max-h-[60vh]"></div>
+    </div>
+
+    <!-- COURSE SCRIPTS & GTM CHECKLIST MODAL -->
+    <div id="cheatsheet-modal" class="fixed inset-0 bg-slate-950/75 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-slate-900 text-slate-100 border border-slate-700 rounded-3xl max-w-3xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+            <div class="p-5 bg-slate-950 border-b border-slate-800 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-mono text-amber-400 uppercase">Copy-Paste Custom HTML Listeners</span>
+                    <h3 class="text-lg font-bold text-white">Umar Tazkeer Course Scripts & 2026 GTM Target Reference</h3>
+                </div>
+                <button onclick="closeCheatSheetModal()" class="text-slate-400 hover:text-white text-lg">✕</button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-5 text-xs font-mono dl-scroll">
+                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                    <div class="text-cyan-400 font-bold">1. Exact Selectors & URLs on This Website:</div>
+                    <ul class="space-y-1 text-slate-300 list-disc pl-4">
+                        <li>Brochure vs Walkthrough Buttons: <code>Click Text equals Download Brochure</code> | <code>Walkthrough</code></li>
+                        <li>Specific Anchor Link: <code>Click URL contains #contact</code></li>
+                        <li>File Download RegEx: <code>Click URL Matches RegEx \.(pdf|ppt|docx|xlsx)$</code></li>
+                        <li>Element Visibility (Image Box): CSS Selector <code>.col-lg-6</code> (100% minimum percent visible)</li>
+                        <li>Element Visibility (Popup Modal): CSS Selector <code>.popup-container</code> (Observe DOM changes checked)</li>
+                        <li>Image Hover Target Class: <code>img-fluid</code> (fires <code>gtm.hover</code> after 1500ms)</li>
+                        <li>Thank You Page Conversion Path: <code>Page URL contains /thanks.php</code></li>
+                        <li>Tawk.to Exception Trigger Page: <code>Page URL contains /clothing.php</code></li>
+                    </ul>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                    <div class="text-amber-300 font-bold">2. Contact Form 7 Custom HTML Listener ([02:32:29]):</div>
+                    <pre class="text-emerald-300 overflow-x-auto">&lt;script&gt;
+document.addEventListener('wpcf7mailsent', function(event) {
+  window.dataLayer.push({ 'event': 'wpcf7mailsent' });
+}, false);
+&lt;/script&gt;</pre>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                    <div class="text-amber-300 font-bold">3. Copy Text Clipboard Listener ([02:48:46]):</div>
+                    <pre class="text-emerald-300 overflow-x-auto">&lt;script&gt;
+document.addEventListener('copy', function() {
+  var selectedText = window.getSelection().toString();
+  window.dataLayer.push({
+    'event': 'text_copy',
+    'clipboard_text': selectedText
+  });
+});
+&lt;/script&gt;</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Non-intrusive Toast Notification Container -->
+    <div id="toast-container" class="fixed top-24 right-4 z-50 space-y-2 pointer-events-none"></div>
+
+    <script>
+        const PRODUCTS = [
+            {
+                item_id: 'SKU_NEXA_HOODIE_01',
+                item_name: 'Nexa Smart Hoodie - Clothing Edition',
+                item_category: 'Apparel',
+                price: 2499,
+                image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                item_id: 'SKU_NEXA_WORKSTATION_02',
+                item_name: 'Pro Analytics Dual-Screen Workstation',
+                item_category: 'Hardware',
+                price: 44999,
+                image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                item_id: 'SKU_SGTM_BLUEPRINT_03',
+                item_name: 'Server-Side Tagging & CAPI Blueprint 2026',
+                item_category: 'Digital Guide',
+                price: 4999,
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                item_id: 'SKU_ROUTER_X1_04',
+                item_name: 'Enterprise Telemetry Router X1',
+                item_category: 'Networking',
+                price: 12999,
+                image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80'
+            }
+        ];
+
+        let cart = [{ ...PRODUCTS[2], quantity: 1 }];
+        let dataLayerHistory = [];
+        let firedScrollThresholds = new Set();
+        let visibilityFired = false;
+        let hoverTimer = null;
+        let hoverStartTime = 0;
+        let hoverInterval = null;
+        let currentVirtualPath = '/';
+
+        function setupDataLayerInterceptor() {
+            const originalPush = window.dataLayer.push.bind(window.dataLayer);
+            window.dataLayer.push = function(...args) {
+                const result = originalPush(...args);
+                args.forEach(item => recordDataLayerItem(item));
+                return result;
+            };
+            // Record any pre-existing items
+            window.dataLayer.forEach(item => recordDataLayerItem(item));
+        }
+
+        function recordDataLayerItem(payload) {
+            const timestamp = new Date().toLocaleTimeString();
+            dataLayerHistory.unshift({ timestamp, payload });
+            
+            const badge = document.getElementById('dl-counter-badge');
+            if (badge) badge.textContent = dataLayerHistory.length;
+
+            const latestPre = document.getElementById('hero-latest-dl');
+            if (latestPre) {
+                latestPre.textContent = JSON.stringify(payload, null, 2);
+            }
+            renderDataLayerLog();
+        }
+
+        function renderDataLayerLog() {
+            const container = document.getElementById('datalayer-log-list');
+            if (!container) return;
+            container.innerHTML = dataLayerHistory.map((entry, idx) => {
+                const eventName = entry.payload.event || (entry.payload[0] === 'consent' ? 'consent_mode_v2' : 'data_push');
+                return `
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold text-[11px]">
+                                #${dataLayerHistory.length - idx} · ${eventName}
+                            </span>
+                            <span class="text-slate-500 text-[10px]">${entry.timestamp}</span>
+                        </div>
+                        <pre class="text-[11px] text-slate-300 overflow-x-auto whitespace-pre-wrap">${JSON.stringify(entry.payload, null, 2)}</pre>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function clearDataLayerLog() {
+            dataLayerHistory = [];
+            document.getElementById('dl-counter-badge').textContent = '0';
+            renderDataLayerLog();
+        }
+
+        function toggleDataLayerDrawer() {
+            const drawer = document.getElementById('datalayer-drawer');
+            drawer.classList.toggle('hidden');
+            drawer.classList.toggle('flex');
+        }
+
+        function showToast(title, subtitle, color = 'indigo') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `pointer-events-auto bg-slate-900 text-white border-l-4 border-${color}-500 px-4 py-3 rounded-xl shadow-2xl max-w-xs transition transform duration-300`;
+            toast.innerHTML = `
+                <div class="text-xs font-bold text-white">${title}</div>
+                <div class="text-[11px] font-mono text-slate-300 mt-0.5">${subtitle}</div>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
+        }
+
+        function injectGTMContainer(savedId) {
+            const input = document.getElementById('gtm-id-input');
+            const gtmId = (savedId || input.value || '').trim().toUpperCase();
+            if (!gtmId.startsWith('GTM-') || gtmId.length < 6) {
+                showToast('Invalid Container ID', 'Please enter a valid ID like GTM-XXXXXXX', 'rose');
+                return;
+            }
+            input.value = gtmId;
+            localStorage.setItem('nexaflow_gtm_id', gtmId);
+
+            // Inject real GTM script into <head>
+            const existingScript = document.getElementById('live-gtm-script');
+            if (existingScript) existingScript.remove();
+
+            const gtmScript = document.createElement('script');
+            gtmScript.id = 'live-gtm-script';
+            gtmScript.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${gtmId}');`;
+            document.head.appendChild(gtmScript);
+
+            // Inject <noscript> into body slot
+            document.getElementById('gtm-noscript-slot').innerHTML = `
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${gtmId}"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            `;
+
+            document.getElementById('inject-gtm-text').textContent = `Active: ${gtmId}`;
+            showToast('GTM Container Injected!', `${gtmId} is now active on this page.`, 'emerald');
+        }
+
+        function simulateNavigation(path) {
+            currentVirtualPath = path;
+            const currentSearch = window.location.search || '';
+            try {
+                window.history.pushState({ virtualPath: path }, '', path + currentSearch);
+            } catch (e) {
+                // Fallback for sandboxed iframe environments
+            }
+
+            const fullSimulatedUrl = `https://nexaflow.enterprise${path}${currentSearch}`;
+            document.getElementById('virtual-url-display').textContent = fullSimulatedUrl;
+
+            // Update active buttons
+            const navMap = { '/': 'nav-btn-home', '/clothing.php': 'nav-btn-store', '/thanks.php': 'nav-btn-thanks' };
+            Object.entries(navMap).forEach(([key, btnId]) => {
+                const btn = document.getElementById(btnId);
+                if (btn) {
+                    btn.className = key === path
+                        ? 'px-2.5 py-1 rounded-md font-mono bg-indigo-600 text-white transition'
+                        : 'px-2.5 py-1 rounded-md font-mono bg-slate-800 hover:bg-slate-700 text-slate-300 transition';
+                }
+            });
+
+            // Toggle views
+            const homeView = document.getElementById('view-home');
+            const thanksView = document.getElementById('view-thanks');
+            if (path === '/thanks.php') {
+                homeView.classList.add('hidden');
+                thanksView.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                thanksView.classList.add('hidden');
+                homeView.classList.remove('hidden');
+                if (path === '/clothing.php') {
+                    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            // Evaluate Tawk.to Exception Rule for /clothing.php
+            evaluateTawkException();
+
+            // Push virtual pageview & history change to dataLayer
+            window.dataLayer.push({
+                event: 'virtual_pageview',
+                page_path: path,
+                page_location: fullSimulatedUrl,
+                page_title: path === '/thanks.php' ? 'Thank You - Conversion Confirmed' : (path === '/clothing.php' ? 'NexaFlow Store - Clothing & Gear' : 'NexaFlow Enterprise Home')
+            });
+        }
+
+        function ensureHomeAndScroll(sectionId) {
+            if (currentVirtualPath === '/thanks.php') {
+                simulateNavigation('/');
+            }
+            setTimeout(() => {
+                const el = document.getElementById(sectionId);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 80);
+        }
+
+        function simulateAdClickParams() {
+            const query = '?gclid=EAIaIQobChMI_2026_OCT&fbclid=IwAR_META_2026_CAPI&utm_source=google&utm_medium=cpc&utm_campaign=oct2026_troas_promo';
+            try {
+                window.history.pushState({}, '', currentVirtualPath + query);
+            } catch (e) {}
+
+            const params = {
+                gclid: 'EAIaIQobChMI_2026_OCT',
+                fbclid: 'IwAR_META_2026_CAPI',
+                utm_source: 'google',
+                utm_medium: 'cpc',
+                utm_campaign: 'oct2026_troas_promo'
+            };
+            localStorage.setItem('nexaflow_attribution', JSON.stringify(params));
+
+            document.getElementById('virtual-url-display').textContent = `https://nexaflow.enterprise${currentVirtualPath}${query}`;
+            document.getElementById('hero-gclid-status').textContent = params.gclid;
+            document.getElementById('hidden-gclid').textContent = params.gclid;
+            document.getElementById('hidden-fbclid').textContent = params.fbclid;
+            document.getElementById('hidden-utm-source').textContent = params.utm_source;
+            document.getElementById('hidden-utm-campaign').textContent = params.utm_campaign;
+
+            window.dataLayer.push({
+                event: 'ad_click_simulated',
+                attribution_params: params
+            });
+            showToast('Ad Click Parameters Applied', 'gclid, fbclid & UTMs stored in URL & 1st-party storage.', 'emerald');
+        }
+
+        function evaluateTawkException() {
+            const exceptionChecked = document.getElementById('tawk-exception-toggle').checked;
+            const chatWidget = document.getElementById('tawk-chat-widget');
+            if (exceptionChecked && currentVirtualPath === '/clothing.php') {
+                chatWidget.classList.add('hidden');
+                showToast('Trigger Exception Active', 'Tawk.to Live Chat blocked on /clothing.php!', 'amber');
+            } else {
+                chatWidget.classList.remove('hidden');
+            }
+        }
+
+        function toggleGTMSelectors(enabled) {
+            document.body.classList.toggle('show-gtm-selectors', enabled);
+        }
+
+        function handleHeroButtonClick(buttonText) {
+            window.dataLayer.push({
+                event: 'cta_button_click',
+                click_text: buttonText,
+                section: 'hero'
+            });
+            showToast(`Button Clicked: "${buttonText}"`, `Test GTM Trigger: Click Text equals "${buttonText}"`, 'indigo');
+        }
+
+        function handleSimulatedFileDownload(event, fileUrl, label) {
+            // Prevent 404 navigation while letting GTM's Just Links click listener inspect the <a> element
+            event.preventDefault();
+            const ext = fileUrl.split('.').pop();
+            window.dataLayer.push({
+                event: 'file_download',
+                file_url: fileUrl,
+                file_extension: ext,
+                link_text: label
+            });
+            showToast(`Simulated Download: .${ext}`, `URL: ${fileUrl} (Matches RegEx)`, 'emerald');
+        }
+
+        function logOutboundClick(url, partnerName) {
+            window.dataLayer.push({
+                event: 'outbound_link_click',
+                click_url: url,
+                partner_name: partnerName,
+                is_outbound: true
+            });
+            showToast('Outbound Link Clicked', `${url} (Is Outbound = true)`, 'sky');
+        }
+
+        function setupImageHoverAndVisibility() {
+            const img = document.getElementById('hover-target-image');
+            const timerDisplay = document.getElementById('hover-timer-display');
+
+            if (img) {
+                img.addEventListener('mouseenter', () => {
+                    hoverStartTime = Date.now();
+                    hoverInterval = setInterval(() => {
+                        const elapsed = Math.min(1.5, (Date.now() - hoverStartTime) / 1000);
+                        timerDisplay.textContent = `Hover: ${elapsed.toFixed(1)}s / 1.5s`;
+                    }, 100);
+
+                    hoverTimer = setTimeout(() => {
+                        clearInterval(hoverInterval);
+                        timerDisplay.textContent = 'Hover: 1.5s ✔ (gtm.hover Fired!)';
+                        window.dataLayer.push({
+                            event: 'gtm.hover',
+                            elementClass: 'img-fluid',
+                            hoverDuration: 1500
+                        });
+                        showToast('Image Hover Intent Fired!', 'Event: gtm.hover (1500ms on img.img-fluid)', 'emerald');
+                    }, 1500);
+                });
+
+                img.addEventListener('mouseleave', () => {
+                    clearTimeout(hoverTimer);
+                    clearInterval(hoverInterval);
+                    timerDisplay.textContent = 'Hover: 0.0s / 1.5s';
+                });
+            }
+
+            // IntersectionObserver for 100% Element Visibility on .col-lg-6
+            const visBox = document.getElementById('visibility-showcase-box');
+            if (visBox && 'IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.intersectionRatio >= 0.95 && !visibilityFired) {
+                            visibilityFired = true;
+                            document.getElementById('visibility-indicator-dot').className = 'w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping';
+                            document.getElementById('visibility-status-text').textContent = 'Visibility (.col-lg-6): 100% Visible ✔';
+                            window.dataLayer.push({
+                                event: 'element_visibility_100',
+                                css_selector: '.col-lg-6',
+                                percent_visible: 100
+                            });
+                            showToast('Element 100% Visible!', 'Selector .col-lg-6 entered 100% viewport view.', 'cyan');
+                        }
+                    });
+                }, { threshold: [0.95] });
+                observer.observe(visBox);
+            }
+
+            // Native Copy Event Listener matching [02:48:46] in the video
+            document.addEventListener('copy', () => {
+                const selectedText = window.getSelection().toString().trim();
+                if (selectedText) {
+                    window.dataLayer.push({
+                        event: 'text_copy',
+                        clipboard_text: selectedText
+                    });
+                    showToast('Clipboard Copy Tracked!', `clipboard_text: "${selectedText.slice(0, 35)}..."`, 'indigo');
+                }
+            });
+        }
+
+        function copyPromoCodeToClipboard() {
+            const code = document.getElementById('promo-code-text').textContent;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = code;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            window.dataLayer.push({
+                event: 'text_copy',
+                clipboard_text: code
+            });
+            showToast('Promo Code Copied!', `clipboard_text: "${code}" pushed to dataLayer`, 'emerald');
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const pct = docHeight > 0 ? Math.min(100, Math.round((scrollTop / docHeight) * 100)) : 0;
+
+            document.getElementById('scroll-progress-bar').style.width = `${pct}%`;
+            document.getElementById('scroll-pct-readout').textContent = `${pct}%`;
+
+            [25, 50, 75, 100].forEach(threshold => {
+                if (pct >= threshold && !firedScrollThresholds.has(threshold)) {
+                    firedScrollThresholds.add(threshold);
+                    window.dataLayer.push({
+                        event: 'scroll_depth_milestone',
+                        scroll_threshold: threshold,
+                        scroll_direction: 'vertical',
+                        scroll_units: 'percent'
+                    });
+                }
+            });
+        });
+
+        function simulateYouTubeEvent(status, percent) {
+            window.dataLayer.push({
+                event: 'gtm.video',
+                'gtm.videoStatus': status,
+                'gtm.videoPercent': percent,
+                'gtm.videoTitle': 'Google Tag Manager Full Course in Single Video',
+                'gtm.videoUrl': 'https://www.youtube.com/watch?v=b-IpGibR59M'
+            });
+            showToast(`YouTube Event: ${status} (${percent}%)`, 'Pushed gtm.video variables to dataLayer.', 'rose');
+        }
+
+        function handleRedirectFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('formA-name').value;
+            const email = document.getElementById('formA-email').value;
+            const phone = document.getElementById('formA-phone').value;
+            const req = document.getElementById('formA-req').value;
+
+            document.getElementById('thanks-summary-details').innerHTML = `
+                <div>Lead Name: <strong class="text-indigo-600">${name}</strong></div>
+                <div>Lead Email: <strong class="text-indigo-600">${email}</strong></div>
+                <div>Phone: <strong>${phone}</strong></div>
+                <div>Requirement: <strong>${req}</strong></div>
+                <div>Virtual URL: <strong class="text-emerald-600">/thanks.php</strong></div>
+            `;
+
+            window.dataLayer.push({
+                event: 'form_submit_redirect',
+                lead_type: req,
+                destination_page: '/thanks.php'
+            });
+
+            simulateNavigation('/thanks.php');
+            showToast('Redirected to /thanks.php', 'Google Ads & Meta Lead PageView triggers fire now!', 'emerald');
+        }
+
+        function handleAjaxFormSubmit(e) {
+            e.preventDefault();
+            const mode = document.getElementById('ajax-plugin-mode').value;
+            const name = document.getElementById('formB-name').value;
+            const email = document.getElementById('formB-email').value;
+
+            // Dispatch actual DOM CustomEvents so custom listeners inside GTM work
+            if (mode === 'wpcf7mailsent') {
+                const cf7Event = new CustomEvent('wpcf7mailsent', {
+                    detail: { contactFormId: '402', inputs: [{ name: 'your-name', value: name }, { name: 'your-email', value: email }] }
+                });
+                document.dispatchEvent(cf7Event);
+            } else {
+                const wpEvent = new CustomEvent('wpformsAjaxSubmitSuccess', {
+                    detail: { formId: '881' }
+                });
+                document.dispatchEvent(wpEvent);
+            }
+
+            // Also push directly to window.dataLayer
+            window.dataLayer.push({
+                event: mode,
+                ajax_form_plugin: mode === 'wpcf7mailsent' ? 'Contact Form 7' : 'WPForms',
+                lead_name: name,
+                lead_email: email
+            });
+
+            const box = document.getElementById('ajax-form-response');
+            const info = document.getElementById('ajax-event-dispatched-info');
+            box.classList.remove('hidden');
+            info.textContent = `Dispatched DOM Event & dataLayer push: { event: "${mode}" }`;
+            showToast(`AJAX Event Fired: ${mode}`, 'No page reload! Check dataLayer drawer.', 'amber');
+        }
+
+        function handleIntermediateFormSubmit(e) {
+            e.preventDefault();
+            const eventId = 'evt_lead_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+            const storedAttr = JSON.parse(localStorage.getItem('nexaflow_attribution') || '{}');
+
+            const payload = {
+                event: 'lead_generated',
+                event_id: eventId, // For Meta Pixel + CAPI Deduplication
+                value: 15000,
+                currency: 'INR',
+                user_data: {
+                    email: document.getElementById('formC-email').value.trim().toLowerCase(),
+                    phone_number: document.getElementById('formC-phone').value.trim(),
+                    address: {
+                        first_name: document.getElementById('formC-fname').value.trim(),
+                        last_name: document.getElementById('formC-lname').value.trim(),
+                        city: document.getElementById('formC-city').value.trim(),
+                        postal_code: document.getElementById('formC-zip').value.trim(),
+                        country: document.getElementById('formC-country').value.trim()
+                    }
+                },
+                attribution: {
+                    gclid: storedAttr.gclid || document.getElementById('hidden-gclid').textContent,
+                    fbclid: storedAttr.fbclid || document.getElementById('hidden-fbclid').textContent,
+                    utm_source: storedAttr.utm_source || 'direct',
+                    utm_campaign: storedAttr.utm_campaign || 'none'
+                }
+            };
+
+            window.dataLayer.push(payload);
+            showToast('2026 Enhanced Conversion Pushed!', `Deduplication ID: ${eventId}`, 'emerald');
+        }
+
+        function simulateCalendlyPostMessage() {
+            window.postMessage({
+                event: 'calendly.event_scheduled',
+                payload: {
+                    invitee: 'rohan.k@enterprise.in',
+                    event_type: 'Enterprise Strategy Discovery Call'
+                }
+            }, '*');
+        }
+
+        // Listen for window.postMessage (Calendly iFrame Lesson)
+        window.addEventListener('message', (e) => {
+            if (e.data && e.data.event === 'calendly.event_scheduled') {
+                window.dataLayer.push({
+                    event: 'calendly_meeting_booked',
+                    iframe_event: e.data.event,
+                    invitee_email: e.data.payload.invitee
+                });
+                showToast('iFrame postMessage Captured!', 'Event: calendly.event_scheduled', 'indigo');
+            }
+        });
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            if (!grid) return;
+            grid.innerHTML = PRODUCTS.map((p, index) => `
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-100 overflow-hidden relative">
+                            <img src="${p.image}" alt="${p.item_name}" 
+                                onerror="this.src='https://placehold.co/600x400/1e1b4b/ffffff?text=NexaFlow+Product'"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-slate-900/80 text-white">
+                                ${p.item_category}
+                            </span>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-[10px] font-mono text-slate-400">${p.item_id}</div>
+                            <h3 class="font-bold text-slate-900 text-sm mt-0.5">${p.item_name}</h3>
+                            <div class="text-lg font-extrabold text-indigo-600 font-mono mt-2">₹${p.price.toLocaleString('en-IN')}</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 flex gap-2">
+                        <button onclick="handleViewItem(${index})" class="w-1/2 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold text-xs transition">
+                            View Item
+                        </button>
+                        <button onclick="handleAddToCart(${index})" class="w-1/2 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function handleViewItem(index) {
+            const product = PRODUCTS[index];
+            window.dataLayer.push({ ecommerce: null });
+            window.dataLayer.push({
+                event: 'view_item',
+                ecommerce: {
+                    currency: 'INR',
+                    value: product.price,
+                    items: [{ ...product, quantity: 1 }]
+                }
+            });
+            showToast('GA4 view_item Pushed', `${product.item_name} (₹${product.price})`, 'indigo');
+        }
+
+        function handleAddToCart(index) {
+            const product = PRODUCTS[index];
+            const existing = cart.find(i => i.item_id === product.item_id);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            updateCartUI();
+
+            // Push GA4 add_to_cart event
+            window.dataLayer.push({ ecommerce: null });
+            window.dataLayer.push({
+                event: 'add_to_cart',
+                ecommerce: {
+                    currency: 'INR',
+                    value: product.price,
+                    items: [{ ...product, quantity: 1 }]
+                }
+            });
+
+            // Open the `.popup-container` modal for the Element Visibility Popup Trigger lesson!
+            document.getElementById('popup-product-summary').innerHTML = `
+                <div class="font-bold text-slate-900">${product.item_name}</div>
+                <div class="text-xs font-mono text-indigo-600 mt-0.5">Price: ₹${product.price.toLocaleString('en-IN')} · SKU: ${product.item_id}</div>
+            `;
+            const backdrop = document.getElementById('add-to-cart-popup-backdrop');
+            backdrop.classList.remove('hidden');
+            backdrop.classList.add('flex');
+
+            window.dataLayer.push({
+                event: 'popup_shown',
+                popup_selector: '.popup-container'
+            });
+        }
+
+        function closeAddToCartPopup() {
+            const backdrop = document.getElementById('add-to-cart-popup-backdrop');
+            backdrop.classList.add('hidden');
+            backdrop.classList.remove('flex');
+        }
+
+        function updateCartUI() {
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('header-cart-count').textContent = totalCount;
+            document.getElementById('store-cart-count').textContent = totalCount;
+
+            const container = document.getElementById('cart-items-container');
+            if (!container) return;
+
+            if (cart.length === 0) {
+                container.innerHTML = `<div class="text-xs text-slate-400 py-6 text-center">Your cart is empty. Add a product to test E-Commerce tracking!</div>`;
+            } else {
+                container.innerHTML = cart.map((item, idx) => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs">
+                        <div>
+                            <div class="font-bold text-slate-800">${item.item_name}</div>
+                            <div class="font-mono text-slate-500">Qty: ${item.quantity} × ₹${item.price.toLocaleString('en-IN')}</div>
+                        </div>
+                        <button onclick="removeCartItem(${idx})" class="text-rose-500 hover:text-rose-700 font-mono">Remove</button>
+                    </div>
+                `).join('');
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            const tax = Math.round(subtotal * 0.18);
+            const total = subtotal + tax;
+
+            document.getElementById('cart-subtotal').textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+            document.getElementById('cart-tax').textContent = `₹${tax.toLocaleString('en-IN')}`;
+            document.getElementById('cart-total').textContent = `₹${total.toLocaleString('en-IN')}`;
+        }
+
+        function removeCartItem(idx) {
+            cart.splice(idx, 1);
+            updateCartUI();
+        }
+
+        function openCartModal() {
+            updateCartUI();
+            const modal = document.getElementById('cart-modal-backdrop');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCartModal() {
+            const modal = document.getElementById('cart-modal-backdrop');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function triggerBeginCheckout() {
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            window.dataLayer.push({ ecommerce: null });
+            window.dataLayer.push({
+                event: 'begin_checkout',
+                ecommerce: {
+                    currency: 'INR',
+                    value: subtotal,
+                    coupon: 'NEXA2026ROAS',
+                    items: cart
+                }
+            });
+            showToast('GA4 begin_checkout Fired!', `Cart Value: ₹${subtotal.toLocaleString('en-IN')}`, 'amber');
+        }
+
+        function triggerPurchaseEvent() {
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            const tax = Math.round(subtotal * 0.18);
+            const total = subtotal + tax;
+            const txnId = 'TXN_2026_' + Math.floor(100000 + Math.random() * 900000);
+            const eventId = 'evt_pur_' + Date.now();
+
+            window.dataLayer.push({ ecommerce: null });
+            window.dataLayer.push({
+                event: 'purchase',
+                event_id: eventId,
+                ecommerce: {
+                    transaction_id: txnId,
+                    value: total,
+                    tax: tax,
+                    shipping: 0,
+                    currency: 'INR',
+                    coupon: 'NEXA2026ROAS',
+                    items: [...cart]
+                },
+                user_data: {
+                    email: 'buyer@nexaflow.in',
+                    phone_number: '+919876543210'
+                }
+            });
+
+            closeCartModal();
+            document.getElementById('thanks-summary-details').innerHTML = `
+                <div>Transaction ID: <strong class="text-emerald-600">${txnId}</strong></div>
+                <div>CAPI Deduplication event_id: <strong class="text-indigo-600">${eventId}</strong></div>
+                <div>Total Revenue (INR): <strong>₹${total.toLocaleString('en-IN')} (incl. ₹${tax} GST)</strong></div>
+                <div>Items Purchased: <strong>${cart.length} SKU(s)</strong></div>
+            `;
+            simulateNavigation('/thanks.php');
+            showToast('GA4 Purchase Complete!', `Transaction ${txnId} (₹${total.toLocaleString('en-IN')})`, 'emerald');
+        }
+
+        function setWhatsAppMode(mode) {
+            const link = document.getElementById('floating-whatsapp-link');
+            const preview = document.getElementById('wa-url-preview');
+            const btnDesk = document.getElementById('wa-mode-desktop');
+            const btnMob = document.getElementById('wa-mode-mobile');
+
+            if (mode === 'desktop') {
+                link.href = 'https://web.whatsapp.com/send?phone=919876543210&text=Hi%20NexaFlow%20Team';
+                preview.textContent = 'web.whatsapp.com';
+                btnDesk.className = 'px-2 py-1 rounded-lg bg-emerald-600 text-white font-semibold transition';
+                btnMob.className = 'px-2 py-1 rounded-lg text-slate-300 hover:bg-slate-800 transition';
+            } else {
+                link.href = 'https://api.whatsapp.com/send?phone=919876543210&text=Hi%20NexaFlow%20Team';
+                preview.textContent = 'api.whatsapp.com';
+                btnMob.className = 'px-2 py-1 rounded-lg bg-emerald-600 text-white font-semibold transition';
+                btnDesk.className = 'px-2 py-1 rounded-lg text-slate-300 hover:bg-slate-800 transition';
+            }
+            showToast(`WhatsApp URL -> ${mode.toUpperCase()}`, `Href updated to ${preview.textContent}`, 'emerald');
+        }
+
+        function handleWhatsAppClick(event) {
+            event.preventDefault();
+            const href = document.getElementById('floating-whatsapp-link').href;
+            const isMobileApi = href.includes('api.whatsapp.com');
+            window.dataLayer.push({
+                event: 'whatsapp_click',
+                click_url: href,
+                device_target: isMobileApi ? 'mobile_api' : 'desktop_web'
+            });
+            showToast('WhatsApp Click Tracked!', `Click URL: ${isMobileApi ? 'api.whatsapp.com' : 'web.whatsapp.com'}`, 'emerald');
+        }
+
+        function handleTawkChatClick() {
+            window.dataLayer.push({
+                event: 'tawk_chat_opened',
+                page_path: currentVirtualPath
+            });
+            showToast('Tawk.to Widget Clicked', 'Switch to /clothing.php to test the Exception Trigger!', 'indigo');
+        }
+
+        function openConsentBanner() {
+            document.getElementById('consent-v2-banner').classList.remove('hidden');
+        }
+
+        function closeConsentBanner() {
+            document.getElementById('consent-v2-banner').classList.add('hidden');
+        }
+
+        function applyConsentMode(action) {
+            let state = {};
+            if (action === 'granted') {
+                state = { ad_storage: 'granted', analytics_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' };
+            } else if (action === 'denied') {
+                state = { ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
+            } else {
+                state = {
+                    ad_storage: document.getElementById('consent-ad-storage').checked ? 'granted' : 'denied',
+                    analytics_storage: document.getElementById('consent-analytics-storage').checked ? 'granted' : 'denied',
+                    ad_user_data: document.getElementById('consent-ad-user-data').checked ? 'granted' : 'denied',
+                    ad_personalization: document.getElementById('consent-ad-personalization').checked ? 'granted' : 'denied'
+                };
+            }
+
+            window.dataLayer.push({
+                event: 'consent_update',
+                consent_mode_v2: state
+            });
+            document.getElementById('hero-consent-status').textContent = `ad_user_data: ${state.ad_user_data}`;
+            closeConsentBanner();
+            showToast('Consent Mode v2 Updated', `ad_storage: ${state.ad_storage}, ad_user_data: ${state.ad_user_data}`, 'emerald');
+        }
+
+        function openCheatSheetModal() {
+            const modal = document.getElementById('cheatsheet-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCheatSheetModal() {
+            const modal = document.getElementById('cheatsheet-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        window.onload = function() {
+            setupDataLayerInterceptor();
+            renderProducts();
+            updateCartUI();
+            setupImageHoverAndVisibility();
+
+            // Restore saved GTM Container ID if available
+            const savedGtm = localStorage.getItem('nexaflow_gtm_id');
+            if (savedGtm) {
+                injectGTMContainer(savedGtm);
+            }
+
+            // Push initial sandbox ready state
+            window.dataLayer.push({
+                event: 'sandbox_ready',
+                sandbox_version: '2026.10',
+                page_path: '/'
+            });
+        };
+    </script>
+</body>
+</html>
